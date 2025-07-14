@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sachi Dutta - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fceef3;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 0 10px;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #c6417d;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #fff;
+      padding: 15px 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #c6417d;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #a22c60;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      color: #b03c6f;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #f8c8d8;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    a {
+      color: #b03c6f;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .about-marquee {
+      overflow: hidden;
+      border-top: 1px dashed #f8c8d8;
+      border-bottom: 1px dashed #f8c8d8;
+      margin: 20px 0;
+    }
+
+    .scroll-text {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100%;
+      animation: scroll-left 15s linear infinite;
+      color: #a03c6e;
+    }
+    .project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  flex: 1 1 calc(45% - 20px);
+  min-width: 250px;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #2c2c2c;
+}
+
+.project-card p {
+  margin: 10px 0;
+}
+
+.project-card a {
+  color: #6c2bd9;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: none;
+}
+
+.contact-form button {
+  background-color: #b03c6f;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 120px;
+}
+
+.contact-form button:hover {
+  background-color: #92295a;
+}
+
+
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    
+    }
+  </style>
+</head>
+<body>
+
+  <header>My Portfolio</header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#tech">Tech Stack</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#highlights">Highlights</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-marquee">
+      <div class="scroll-text">
+        I'm a curious and driven computer science student passionate about exploring new technologies and solving real-world problems through code.
+      </div>
+    </div>
+    <p><strong>Name:</strong> Sachi Dutta</p>
+    <p><strong>Age:</strong> 18</p>
+    <p><strong>University:</strong> Chitkara University</p>
+    <p><strong>Currently:</strong> 2nd Year Computer Science Student</p>
+  </section>
+
+  <section id="tech">
+    <h2>Tech Stack</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>C</li>
+      <li>C++</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3> Website - Online Pet Shop</h3>
+      <p>A responsive site built with HTML, CSS, JavaScript.</p>
+      <a href="https://github.com/SachiDutta/OnlinePetShop" target="_blank">View</a>
+    </div>
+
+    <div class="project-card">
+      <h3>IoT Mini Project</h3>
+      <p>Smart camera survelliance using Raspberry Pi & Python.</p>
+      <a href="https://github.com/SachiDutta" target="_blank">View </a>
+    </div>
+
+    <div class="project-card">
+      <h3>Explore More</h3>
+      <p>See all of my projects and contributions on GitHub.</p>
+      <a href="https://github.com/SachiDutta" target="_blank">View All Projects</a>
+    </div>
+  </div>
+</section>
+<section id="involvement">
+  <h2>Professional Involvement & Growth</h2>
+  <ul>
+   
+    <li>Attended technical workshops on Python automation, GitHub, and Arduino Workshop</li>
+    <li>Contributed to collaborative student coding projects and version control using Git</li>
+    <li>Regularly practicing Data Structures & Algorithms on platforms like LeetCode</li>
+    <li>Currently building hands-on mini projects using Raspberry Pi & Arduino</li>
+  </ul>
+</section>
+
+<section>
+<h2>Skills & Interests</h2>
+<ul>
+  <li>Web Development (HTML, CSS, JS)</li>
+  <li>Python Automation & Scripting</li>
+  <li>Version Control with Git & GitHub</li>
+  <li>Interest in AI, Cybersecurity & Cloud Computing</li>
+  <li>Quick learner, detail-oriented, team collaborator</li>
+</ul>
+</section>
+
+
+  <section id="contact">
+  <h2>Contact Me</h2>
+  <form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+
+</body>
+</html>
+
+
+
